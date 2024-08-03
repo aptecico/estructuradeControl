@@ -50,10 +50,12 @@ public class Vectonombres {
             System.out.println("Ingrese estatura del estudiante"
                     + estudiantes[i]);
             estatura[i]=lectura.nextInt();
+            
         }
         
         //=========Listar datos=====
         System.out.println("Listado de datos ingresados");
+        System.out.println("| \tNombre\t | \tEstatura\t |");
         
         
     }
