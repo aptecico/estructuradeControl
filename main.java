@@ -59,6 +59,14 @@ public class EstructuradeControl {
                 
             break;
             
+            case 2:
+                Scanner lec=new Scanner(System.in);
+                System.out.println("Ingrese mensaje a mostrar");
+                mensaje=lec.next();
+                System.out.println("El mensaje que ingreso es: "
+                        + mensaje);
+                break;
+            
             default:
                 System.out.println("Opción no válida");
             break;
