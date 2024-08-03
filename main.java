@@ -41,6 +41,28 @@ public class EstructuradeControl {
         Scanner sn =new Scanner(System.in);
         opcion=sn.nextInt();
         
+        //estructura de control
+        
+        switch(opcion){
+            case 1:
+                //solicitar los numero de la suma
+                Scanner lectura=new Scanner(System.in);
+                System.out.println("Ingrese primer número");
+                numero1=lectura.nextInt();
+                System.out.println("Ingrese segundo número");
+                numero2=lectura.nextInt();
+                //opracion matematica
+                resultado=numero1+numero2;
+                System.out.println("La suma de "+numero1+"+"
+                        +numero2+"="+resultado);
+                
+                
+            break;
+            
+            default:
+                System.out.println("Opción no válida");
+            break;
+        }
     }
     
 }
