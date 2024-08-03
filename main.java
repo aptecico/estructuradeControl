@@ -4,6 +4,7 @@
  */
 package estructuradecontrol;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -62,10 +63,20 @@ public class EstructuradeControl {
             case 2:
                 Scanner lec=new Scanner(System.in);
                 System.out.println("Ingrese mensaje a mostrar");
-                mensaje=lec.next();
+                mensaje=lec.nextLine();
                 System.out.println("El mensaje que ingreso es: "
                         + mensaje);
                 break;
+            case 3:
+                    //numero aleatorio
+                Random numaleatorio=new Random();
+                aleatorio=numaleatorio.nextInt(100);
+                System.out.println("El número aleatorio es:"
+                        + aleatorio);
+             break;
+            case 4:
+                   System.out.println("Gracias por utilizar el programa");
+             break;
             
             default:
                 System.out.println("Opción no válida");
