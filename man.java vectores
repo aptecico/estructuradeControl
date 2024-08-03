@@ -1,0 +1,61 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package vectonombres;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author German
+ */
+public class Vectonombres {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        //vectores prestablecidos
+        String[] nombres={"Juan","Maria","Claudia","Pepito","luz"};
+        
+        System.out.println("Listado de nombres");
+        for(String nombre:nombres){
+            System.out.println(nombre);
+        }
+        System.out.println("Listado de nombres con for convenional");
+        for(int i=0;i<nombres.length;i++){
+            System.out.println(nombres[i]);
+        }
+        
+        //=========================================
+        //Ingresar por teclado la cantidad de elementos de cada 
+        //vector y sus valores
+        
+        System.out.println("===============================");
+        System.out.println("Ingrese cantidad de elementos en "
+                + "el vector de nombres y estatura");
+        Scanner lectura=new Scanner(System.in);
+        //definir variables
+        int cantidad=lectura.nextInt();
+        //definir vectores de nombres y estaturas
+        String[] estudiantes=new String[cantidad];
+        int[]    estatura   =new int[cantidad];
+        
+        for(int i=0; i<cantidad;i++){
+            //Ingrear elementos en elv etor nombre
+            System.out.print("Ingrese nombre estudiante: ");
+            estudiantes[i]=lectura.nextLine();
+            System.out.println("Ingrese estatura del estudiante"
+                    + estudiantes[i]);
+            estatura[i]=lectura.nextInt();
+        }
+        
+        //=========Listar datos=====
+        System.out.println("Listado de datos ingresados");
+        
+        
+    }
+    
+}
